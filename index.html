@@ -546,7 +546,7 @@
   /* Waveform */
   .waveform-container {
     width: 100%;
-    height: 50px;
+    height: 70px;
     background: #0f1017;
     border-radius: 8px;
     border: 1px solid rgba(255,255,255,0.06);
@@ -647,11 +647,11 @@
     <div class="quick-controls">
       <button class="btn-quick" onclick="seekOffset(-10)">-10s</button>
       <button class="btn-quick" onclick="seekOffset(-3)">-3s</button>
-      <button class="btn-quick yellow" onclick="adjustActiveLineTimestamp(-50)">-50</button>
-      <button class="btn-quick yellow" onclick="adjustActiveLineTimestamp(-10)">-10</button>
+      <button class="btn-quick yellow" onclick="adjustActiveLineTimestamp(-50)">-100</button>
+      <button class="btn-quick yellow" onclick="adjustActiveLineTimestamp(-10)">-20</button>
       <button class="btn-quick yellow play-btn" id="btnPlayPause" onclick="togglePlay()">▶</button>
-      <button class="btn-quick yellow" onclick="adjustActiveLineTimestamp(10)">+10</button>
-      <button class="btn-quick yellow" onclick="adjustActiveLineTimestamp(50)">+50</button>
+      <button class="btn-quick yellow" onclick="adjustActiveLineTimestamp(10)">+20</button>
+      <button class="btn-quick yellow" onclick="adjustActiveLineTimestamp(50)">+100</button>
       <button class="btn-quick" onclick="seekOffset(3)">+3s</button>
       <button class="btn-quick" onclick="seekOffset(10)">+10s</button>
     </div>
@@ -733,7 +733,7 @@
       <!-- TAB 2: ANOTACIONES -->
       <div class="tab-content" id="tab2">
         <div style="font-size:0.75rem; color:#aaa;">Vincula la anotación a un momento de la canción escribiendo su timestamp entre corchetes (mm:ss.xx), ej: <i>Explicación o significado [01:03.20]</i>. Se mostrará mientras suene la línea que empieza en ese instante o justo después.</div>
-        <textarea class="lrc-textarea" style="height:340px; background:#0d0e14; border-radius:10px; border:1px solid rgba(255,255,255,0.08);" id="annotationsInput" placeholder="Escribe aquí las anotaciones...&#10;Ejemplo de anotación [00:12.50]&#10;Otra anotación explicativa [01:03.20]" oninput="parseAnnotations()"></textarea>
+        <textarea class="lrc-textarea" style="height:720px; background:#0d0e14; border-radius:10px; border:1px solid rgba(255,255,255,0.08);" id="annotationsInput" placeholder="Escribe aquí las anotaciones..." oninput="parseAnnotations()"></textarea>
       </div>
 
       <!-- TAB 3: ESTILOS -->
