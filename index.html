@@ -245,13 +245,13 @@
       transform: scale(1.12) translate(0%, 0%) rotate(0deg);
     }
     33% {
-      transform: scale(1.22) translate(-2.5%, 2%) rotate(1deg);
+      transform: scale(1.22) translate(-4.5%, 3%) rotate(1deg);
     }
     66% {
-      transform: scale(1.18) translate(2%, -2.5%) rotate(-1deg);
+      transform: scale(1.18) translate(4%, -3.5%) rotate(-1deg);
     }
     100% {
-      transform: scale(1.24) translate(1.5%, 1.5%) rotate(0.6deg);
+      transform: scale(1.24) translate(2.5%, 3.5%) rotate(0.6deg);
     }
   }
 
@@ -1394,15 +1394,15 @@
 
         <div class="control-row">
           <div class="control-label-wrap"><span>Título Canción</span><span id="val_fs_title">1.35</span></div>
-          <input type="range" class="slider-custom" min="0.8" max="2.2" step="0.05" value="1.35" oninput="updateFontSize('--fs-title', this.value, 'val_fs_title')">
+          <input type="range" class="slider-custom" min="0.8" max="2.4" step="0.05" value="1.35" oninput="updateFontSize('--fs-title', this.value, 'val_fs_title')">
         </div>
         <div class="control-row">
           <div class="control-label-wrap"><span>Artista</span><span id="val_fs_artist">0.95</span></div>
-          <input type="range" class="slider-custom" min="0.6" max="1.6" step="0.05" value="0.95" oninput="updateFontSize('--fs-artist', this.value, 'val_fs_artist')">
+          <input type="range" class="slider-custom" min="0.6" max="2.0" step="0.05" value="0.95" oninput="updateFontSize('--fs-artist', this.value, 'val_fs_artist')">
         </div>
         <div class="control-row">
           <div class="control-label-wrap"><span>Álbum & Año</span><span id="val_fs_album">0.82</span></div>
-          <input type="range" class="slider-custom" min="0.5" max="1.5" step="0.05" value="0.82" oninput="updateFontSize('--fs-album', this.value, 'val_fs_album')">
+          <input type="range" class="slider-custom" min="0.5" max="1.8" step="0.05" value="0.82" oninput="updateFontSize('--fs-album', this.value, 'val_fs_album')">
         </div>
         <div class="control-row">
           <div class="control-label-wrap"><span>Vocal Principal (ES)</span><span id="val_fs_main_es">1.20</span></div>
@@ -2629,7 +2629,7 @@ async function downloadThumbnailHD() {
   startY += 26;
 
   // Dibujar Artista (font-weight: 300)
-  ctx.font = `300 ${artistFontSize}px '${cleanFont}', sans-serif`;
+  ctx.font = `600 ${artistFontSize}px '${cleanFont}', sans-serif`;
   ctx.globalAlpha = 0.95;
   artistLines.forEach(line => {
     ctx.fillText(line, textX, startY);
@@ -2639,7 +2639,7 @@ async function downloadThumbnailHD() {
   // Dibujar Subtexto (font-weight: 200)
   if (extraLines.length > 0) {
     startY += 18;
-    ctx.font = `200 ${extraFontSize}px '${cleanFont}', sans-serif`;
+    ctx.font = `400 ${extraFontSize}px '${cleanFont}', sans-serif`;
     ctx.globalAlpha = 0.80;
     extraLines.forEach(line => {
       ctx.fillText(line, textX, startY);
