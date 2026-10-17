@@ -2628,7 +2628,7 @@ async function downloadThumbnailHD() {
 
   startY += 26;
 
-  // Dibujar Artista (font-weight: 300)
+  // Dibujar Artista (font-weight: 500)
   ctx.font = `600 ${artistFontSize}px '${cleanFont}', sans-serif`;
   ctx.globalAlpha = 0.95;
   artistLines.forEach(line => {
@@ -2636,7 +2636,7 @@ async function downloadThumbnailHD() {
     startY += artistLineHeight;
   });
 
-  // Dibujar Subtexto (font-weight: 200)
+  // Dibujar Subtexto (font-weight: 400)
   if (extraLines.length > 0) {
     startY += 18;
     ctx.font = `400 ${extraFontSize}px '${cleanFont}', sans-serif`;
