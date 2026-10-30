@@ -231,14 +231,14 @@
 
   @keyframes ambientFloat {
     0% { transform: scale(1.12) translate(0%, 0%) rotate(0deg); }
-    33% { transform: scale(1.22) translate(-4.5%, 3%) rotate(1deg); }
-    66% { transform: scale(1.18) translate(4%, -3.5%) rotate(-1deg); }
-    100% { transform: scale(1.24) translate(2.5%, 3.5%) rotate(0.6deg); }
+    33% { transform: scale(1.18) translate(-3.5%, 2%) rotate(1deg); }
+    66% { transform: scale(1.14) translate(3%, -2.5%) rotate(-1deg); }
+    100% { transform: scale(1.16) translate(1.5%, 2.5%) rotate(0.6deg); }
   }
 
   .stage-bg-overlay {
     position: absolute; inset: 0;
-    background: radial-gradient(circle at center, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0.50) 100%);
+    background: radial-gradient(circle at center, rgba(0,0,0,0.02) 0%, rgba(0,0,0,0.11) 100%);
     z-index: 2; pointer-events: none;
   }
 
@@ -283,7 +283,7 @@
     background: #111;
     background-size: cover;
     background-position: center;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.5);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
     border: 1px solid rgba(255,255,255,0.08);
     position: relative;
     overflow: hidden;
@@ -303,9 +303,9 @@
     margin: 5px;
     border-radius: 6px;
     background: rgba(0, 0, 0, 0.48);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-    box-shadow: 0 3px 10px rgba(0,0,0,0.75);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 3px 10px rgba(0,0,0,0.50);
     letter-spacing: 0.5px;
     pointer-events: none;
     white-space: nowrap;
@@ -356,7 +356,7 @@
   .stage-right {
     width: 60%; height: 100%;
     display: flex; flex-direction: column; justify-content: space-between;
-    padding-left: 3%;
+    padding-left: 1%;
     overflow: hidden;
     position: relative;
     z-index: 5;
@@ -375,7 +375,7 @@
   }
 
   .main-vocal-es { font-size: var(--fs-main-es); font-weight: var(--fw-heavy); }
-  .main-vocal-orig { font-size: var(--fs-main-orig); font-weight: var(--fw-medium); opacity: 0.9; margin-top: 2px; }
+  .main-vocal-orig { font-size: var(--fs-main-orig); font-weight: var(--fw-medium); opacity: 0.9; margin-top: 3px; }
   .bg-vocal-es { font-size: var(--fs-bg-es); font-weight: var(--fw-medium); font-style: italic; }
   .bg-vocal-orig { font-size: var(--fs-bg-orig); font-weight: var(--fw-light); font-style: italic; opacity: 0.9; }
 
@@ -389,7 +389,7 @@
     font-weight: var(--fw-light);
     font-style: italic;
     opacity: 0;
-    line-height: 1.32;
+    line-height: 1.40;
     max-height: 45%;
     overflow: hidden;
     padding: 2px 8px 3px 2px;
